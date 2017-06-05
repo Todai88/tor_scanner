@@ -67,7 +67,7 @@ class Scanner:
         print('[*] Scanning onion: %s' %onion)
 
         #Firing up process
-        process = subprocess.Popen(["onionscan", "webport=0", "--jsonReport", "--simpleReport=false", onion])
+        process = subprocess.Popen(["onionscan", "webport 0", "-jsonReport", "-simpleReport=false", onion])
 
         #start timer to ensure we don't get locked out!
         process_timer = Timer(300, self.handle_timeout, args=[process, onion])
