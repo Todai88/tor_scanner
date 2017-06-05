@@ -18,7 +18,7 @@ if __name__ == u'__main__':
     parser.add_argument(
         u'-F',
         dest='onion_file',
-        defualt='onion_master_list.txt',
+        default='onion_master_list.txt',
         help=u'The Path to your list of Onions.'
     )
 
