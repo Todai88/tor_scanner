@@ -136,6 +136,7 @@ class Scanner:
 
             result = self.scan(onion)
 
-            if result:
-                self.process_results(onion, result)
+            if result is not None:
+                if len(result):
+                    self.process_results(onion, result)
                 count+=1
